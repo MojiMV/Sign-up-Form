@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css"/>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+    <style>
+        /* CSS rule to apply the font to elements with the .welcome-para class */
+        .form-message,
+        label,
+        input,
+        .welcome-para {
+            font-family: "Jellee Typeface", sans-serif; 
+        }
+    </style>
 </head>
 <body>
-    
+        <div class="left-container">
+            <div class="logotext-container">
+                <div>
+                    <img src="./logo/odin-lined.png" alt="logo image" class="logo">
+                </div>
+                <div class="logo-text">ODIN</div>
+            </div>
+            <div class="img-credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">unsplash</a></div>
+        </div>
+        <div class="right-container">
+            <div class="welcome-para">Welcome to the gateway of innovation! As you log in, remember that each keystroke is a catalyst for progress. Embrace challenges as opportunities to sharpen your skills. Your code isn't just lines; it's the blueprint for a brighter tomorrow. Stay driven, stay focused, and let your passion illuminate the path to success.</div>
+            <form action="">
+                <div class="inputs-container">
+                    <div class="form-message">Let's do this!</div>
+                    <div class="rows">
+                        <div class="label-cont">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="label-cont">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="label-cont">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="label-cont">
+                            <label for="phone-numb">PHONE NUMBER</label>
+                            <input type="tel" name="phone-numb" id="phone-numb">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="label-cont">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="label-cont">
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-pass" id="confirm-pass">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-section">
+                    <button type="submit" class="submit-but">Create Account</button>
+                    <div class="login-link">Already have an account? <a href="">Log in</a></div>
+                </div>
+            </form>
+        </div>
 </body>
 </html>
