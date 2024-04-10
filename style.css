@@ -159,3 +159,13 @@ input:user-invalid{
 .login-link a:visited{
     color: #596D48;
 }
+
+.pass-invalid-border{
+    border: solid 2px #e94141;
+}
+
+.valid-error-message{
+    color: #e94141;
+    font-size: 12px;
+    font-weight: bold;
+}

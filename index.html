@@ -6,7 +6,7 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css"/>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <style>
         /* CSS rule to apply the font to elements with the .welcome-para class */
         .form-message,
@@ -29,42 +29,43 @@
         </div>
         <div class="right-container">
             <div class="welcome-para">Welcome to the gateway of innovation! As you log in, remember that each keystroke is a catalyst for progress. Embrace challenges as opportunities to sharpen your skills. Your code isn't just lines; it's the blueprint for a brighter tomorrow. Stay driven, stay focused, and let your passion illuminate the path to success.</div>
-            <form action="">
+            <form action="google.com">
                 <div class="inputs-container">
                     <div class="form-message">Let's do this!</div>
                     <div class="rows">
                         <div class="label-cont">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="label-cont">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required>
                         </div>
                     </div>
                     <div class="rows">
                         <div class="label-cont">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="label-cont">
                             <label for="phone-numb">PHONE NUMBER</label>
-                            <input type="tel" name="phone-numb" id="phone-numb">
+                            <input type="tel" name="phone-numb" id="phone-numb" required>
                         </div>
                     </div>
                     <div class="rows">
                         <div class="label-cont">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" class="pass-fields" required>
+                            <span class="valid-error-message"></span>
                         </div>
                         <div class="label-cont">
                             <label for="confirm-pass">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-pass" id="confirm-pass">
+                            <input type="password" name="confirm-pass" id="confirm-pass" class="pass-fields" required>
                         </div>
                     </div>
                 </div>
                 <div class="button-section">
-                    <button type="submit" class="submit-but">Create Account</button>
+                    <button type="submit" class="submit-but">Create Account </button>
                     <div class="login-link">Already have an account? <a href="">Log in</a></div>
                 </div>
             </form>
